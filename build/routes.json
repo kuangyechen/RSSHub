@@ -46153,6 +46153,21 @@
     "routes": {
       "/oa_news/:type?": {
         "path": "/oa_news/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/gdut/oa_news/notice",
+        "parameters": {
+          "type": "通知类型，留空则获取所有分类"
+        },
+        "feature": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "radar": [
           {
             "source": [
@@ -46161,11 +46176,14 @@
             "target": "/oa_news/"
           }
         ],
-        "name": "Unknown",
+        "name": "通知公文网",
         "maintainers": [
-          "jim-kirisame"
+          "jim-kirisame",
+          "GamerNoTitle",
+          "Richard-Zheng"
         ],
         "url": "oas.gdut.edu.cn/seeyon",
+        "description": "学校可能会因为 IP 来源非学校而做出一定的限制，建议在校内网络环境下使用 RSS 阅读器订阅。\n\n| 类型 | 参数 | 可能需要校内访问 |\n| ---- | ---- | ---------------- |\n| 部处简讯 | department | 是 |\n| 学院简讯 | academy | 是 |\n| 校内通知 | notice | 是 |\n| 公示公告 | announcement | 是 |\n| 招标结果 | tender_result | 否 |\n| 招标公告 | tender_invite | 否 |\n",
         "location": "oa-news.ts",
         "module": "() => import('@/routes/gdut/oa-news.ts')"
       }
@@ -62970,52 +62988,6 @@
     "name": "InfoQ 中文",
     "url": "infoq.cn",
     "lang": "zh-CN"
-  },
-  "informedainews": {
-    "routes": {
-      "/zh-Hans/docs/:type": {
-        "path": "/zh-Hans/docs/:type",
-        "categories": [
-          "new-media"
-        ],
-        "example": "/informedainews/zh-Hans/docs/world-news-daily",
-        "parameters": {
-          "type": "world-news-daily|tech-enthusiast-weekly|ai-enthusiast-daily"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "informedainews.com",
-              "informedainews.com/zh-Hans/docs/:type",
-              "informedainews.com/docs/:type"
-            ],
-            "target": "/zh-Hans/docs/:type"
-          }
-        ],
-        "name": "知闻AI",
-        "maintainers": [
-          "guicaiyue"
-        ],
-        "location": "docs.ts",
-        "module": "() => import('@/routes/informedainews/docs.ts')"
-      }
-    },
-    "name": "Informed AI News",
-    "apiRoutes": {},
-    "url": "informedainews.com",
-    "description": "\n::: tip\ninformed AI RSS feeds:\n\n-   World News Daily: 'https://rsshub.app/informedainews/zh-Hans/docs/world-news-daily'\n-   Tech Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/tech-enthusiast-weekly'\n-   AI Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/ai-enthusiast-daily'\n:::",
-    "zh": {
-      "name": "知闻AI"
-    },
-    "lang": "en"
   },
   "informs": {
     "routes": {
