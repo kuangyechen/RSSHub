@@ -1865,7 +1865,6 @@ export type RoutePath =
   | `/mpaypass/main/:type?`
   | `/mpaypass/news`
   | `/mrdx/today`
-  | `/mrinalxdev/blog`
   | `/mrm/:category?`
   | `/msn/:market/:name/:id`
   | `/musify/:language?`
