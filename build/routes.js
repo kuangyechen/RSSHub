@@ -95474,6 +95474,48 @@ export default {
     "url": "peopo.org",
     "lang": "zh-TW"
   },
+  "perplexity": {
+    "routes": {
+      "/changelog": {
+        "path": "/changelog",
+        "name": "Changelog",
+        "url": "www.perplexity.ai",
+        "maintainers": [
+          "xbot"
+        ],
+        "example": "/perplexity/changelog",
+        "description": "Subscribe to Perplexity changelog for latest updates and releases.",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.perplexity.ai/changelog"
+            ],
+            "target": "/changelog"
+          }
+        ],
+        "view": 0,
+        "location": "changelog.ts",
+        "module": () => import('@/routes/perplexity/changelog.ts')
+      }
+    },
+    "name": "Perplexity",
+    "apiRoutes": {},
+    "url": "www.perplexity.ai",
+    "description": "Perplexity - AI-powered search and discovery engine",
+    "lang": "en"
+  },
   "phoronix": {
     "routes": {
       "/:category?/:topic?": {
