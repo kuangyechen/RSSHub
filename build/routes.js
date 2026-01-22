@@ -20055,6 +20055,34 @@ export default {
     "url": "bupt.edu.cn",
     "lang": "zh-CN"
   },
+  "bvisness": {
+    "routes": {
+      "/blog": {
+        "name": "Blog",
+        "categories": [
+          "blog"
+        ],
+        "maintainers": [
+          "raxod502"
+        ],
+        "path": "/blog",
+        "example": "/bvisness/blog",
+        "radar": [
+          {
+            "source": [
+              "bvisness.me"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "location": "blog.ts",
+        "module": () => import('@/routes/bvisness/blog.ts')
+      }
+    },
+    "name": "Ben Visness",
+    "apiRoutes": {},
+    "url": "bvisness.me"
+  },
   "bwsg": {
     "routes": {
       "*": {
@@ -108649,6 +108677,73 @@ export default {
     },
     "name": "Sky Sports",
     "url": "skysports.com",
+    "lang": "en"
+  },
+  "slashdot": {
+    "routes": {
+      "/:section?": {
+        "path": "/:section?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/slashdot",
+        "parameters": {
+          "section": "Section name, can be found in the URL host, leave empty for the main page"
+        },
+        "radar": [
+          {
+            "source": [
+              "slashdot.org"
+            ]
+          },
+          {
+            "source": [
+              "devices.slashdot.org"
+            ],
+            "target": "/devices"
+          },
+          {
+            "source": [
+              "build.slashdot.org"
+            ],
+            "target": "/build"
+          },
+          {
+            "source": [
+              "entertainment.slashdot.org"
+            ],
+            "target": "/entertainment"
+          },
+          {
+            "source": [
+              "technology.slashdot.org"
+            ],
+            "target": "/technology"
+          },
+          {
+            "source": [
+              "science.slashdot.org"
+            ],
+            "target": "/science"
+          },
+          {
+            "source": [
+              "yro.slashdot.org"
+            ],
+            "target": "/yro"
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "location": "index.ts",
+        "module": () => import('@/routes/slashdot/index.ts')
+      }
+    },
+    "name": "Slashdot",
+    "apiRoutes": {},
+    "url": "slashdot.org",
     "lang": "en"
   },
   "slowmist": {
