@@ -823,7 +823,8 @@
     "AiraNadih"
   ],
   "/baoyu/blog": [
-    "liyaozhong"
+    "liyaozhong",
+    "Circloud"
   ],
   "/baozimh/comic/:name": [
     "Fatpandac"
@@ -3606,6 +3607,9 @@
   ],
   "/gov/guangdong/tqyb/tfxtq": [
     "Fatpandac"
+  ],
+  "/gov/guizhou/jyt/tzgg": [
+    "sheetung"
   ],
   "/gov/gz/:channel/:category": [],
   "/gov/hainan/iitb/tzgg": [

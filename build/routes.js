@@ -14795,7 +14795,8 @@ export default {
         "url": "baoyu.io/",
         "name": "Blog",
         "maintainers": [
-          "liyaozhong"
+          "liyaozhong",
+          "Circloud"
         ],
         "description": "宝玉 - 博客文章",
         "location": "index.ts",
@@ -51237,6 +51238,39 @@ export default {
         "url": "www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/",
         "location": "guangdong/tqyb/tfxtq.tsx",
         "module": () => import('@/routes/gov/guangdong/tqyb/tfxtq.tsx')
+      },
+      "/guizhou/jyt/tzgg": {
+        "path": "/guizhou/jyt/tzgg",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/guizhou/jyt/tzgg",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "jyt.guizhou.gov.cn/zwgk/tzgg/",
+              "jyt.guizhou.gov.cn/zwgk/tzgg/index.html"
+            ],
+            "target": "/guizhou/jyt/tzgg"
+          }
+        ],
+        "name": "贵州省教育厅 - 通知公告",
+        "maintainers": [
+          "sheetung"
+        ],
+        "url": "jyt.guizhou.gov.cn/zwgk/tzgg/",
+        "description": "贵州省教育厅官方网站通知公告RSS源",
+        "location": "guizhou/jyt.ts",
+        "module": () => import('@/routes/gov/guizhou/jyt.ts')
       },
       "/gz/:channel/:category": {
         "path": "/gz/:channel/:category",
